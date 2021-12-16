@@ -10,13 +10,14 @@
 #---------------------------------------------------------------------
 
 from qgis.core import QgsApplication
-from processing_provider.provider import Provider
+from .processing_provider.provider import Provider
 
 def classFactory(iface):
     return YourPluginName(iface)
 
-class YourPluginName():
-    def __init__(self):
+class YourPluginName:
+    def __init__(self, iface):
+        self.iface = iface
         self.provider = None
 
     def initProcessing(self):

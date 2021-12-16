@@ -1,6 +1,6 @@
 from qgis.core import QgsProcessingProvider
 
-from processing_provider.example_processing_algorithm import ExampleProcessingAlgorithm
+from .example_processing_algorithm import ExampleProcessingAlgorithm
 
 
 class Provider(QgsProcessingProvider):
