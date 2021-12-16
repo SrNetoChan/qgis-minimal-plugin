@@ -12,8 +12,10 @@
 from qgis.core import QgsApplication
 from processing_provider.provider import Provider
 
-class YourPluginName():
+def classFactory(iface):
+    return YourPluginName(iface)
 
+class YourPluginName():
     def __init__(self):
         self.provider = None
 
